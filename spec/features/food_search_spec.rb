@@ -1,4 +1,4 @@
-require "rails-helper"
+require "rails_helper"
 
 # As a user,
 # When I visit "/"
@@ -19,6 +19,7 @@ feature "user can search for foods by an ingredient" do
   it "user submits a food to search by and sees results" do
 
       visit '/'
+ 
 
       fill_in "Ingredient Search", with: "Sweet Potatoes"
 
@@ -37,6 +38,6 @@ feature "user can search for foods by an ingredient" do
         expect(page).to have_css(food.brand_owner)
         expect(page).to have_css(food.ingredients)
       end
-
     end
   end
+end

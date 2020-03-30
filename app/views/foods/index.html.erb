@@ -1,0 +1,9 @@
+<% @search_results.foods.each do |food| %>
+  <ul class="food">
+    <li class="name"><%= food.name %></li>
+    <li class="ups_code"><%= food.ups_code %></li>
+    <li class="description"><%= food.description %></li>
+    <li class="brand_owner"><%= food.brand_owner %></li>
+    <li class="ingredients"><%= food.ingredients %></li>
+  </ul>
+<% end %>
