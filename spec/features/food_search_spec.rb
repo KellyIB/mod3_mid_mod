@@ -32,7 +32,7 @@ feature "user can search for foods by an ingredient" do
       # And I should see a list of 10 foods that have the ingredient
 
       within(first(".food")) do
-        expect(page).to have_css(food.gtin/ups_code)
+        expect(page).to have_css(food.ups_code)
         expect(page).to have_css(food.description)
         expect(page).to have_css(food.brand_owner)
         expect(page).to have_css(food.ingredients)
